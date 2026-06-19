@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book Statistika Ekonomi | Adriansah</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a8a', // Dark Blue
+                        secondary: '#f97316', // Orange
+                        accent: '#eab308', // Yellow
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for details/summary accordion */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: slideDown 0.3s ease-in-out;
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .book-shadow {
+            box-shadow: -10px 10px 20px rgba(0,0,0,0.3), 0 0 10px rgba(0,0,0,0.1) inset;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-slate-50 selection:bg-secondary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-book-open-reader text-primary text-2xl"></i>
+                    <span class="font-bold text-xl text-primary tracking-tight">Pustaka<span class="text-secondary">Statistika</span></span>
+                </div>
+                <div>
+                    <a href="#pemesanan" class="bg-secondary hover:bg-orange-600 text-white px-5 py-2.5 rounded-full font-semibold transition shadow-md shadow-orange-500/30 text-sm sm:text-base">
+                        Beli Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-28 pb-20 lg:pt-36 lg:pb-28 bg-primary overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center text-center lg:text-left">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-2">
+                        <i class="fa-solid fa-star text-accent"></i> Karya Adriansah
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-5xl font-extrabold text-white leading-tight">
+                        Belajar Statistika Ekonomi Jadi Lebih <span class="text-accent relative inline-block">Mudah <svg class="absolute w-full h-3 -bottom-1 left-0 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="transparent"/></svg></span> dan Terarah
+                    </h1>
+                    <p class="text-lg text-slate-200 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        E-book digital Statistika Ekonomi 1 dan Statistika Ekonomi 2, disusun dengan bahasa sederhana, sistematis, dan cocok untuk pelajar, mahasiswa, dosen, peneliti, praktisi, serta masyarakat umum.
+                    </p>
+                    
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#pemesanan" class="bg-secondary hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-xl shadow-orange-500/40 flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                            Beli E-book Sekarang <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="pt-6 flex flex-wrap justify-center lg:justify-start gap-4 text-sm text-slate-300 font-medium">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-file-pdf text-red-400"></i> PDF Digital</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-mobile-screen text-blue-300"></i> Bisa Dibuka di HP & Laptop</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-building-columns text-green-400"></i> Pembayaran Transfer Bank</span>
+                    </div>
+                </div>
+
+                <!-- Hero Images -->
+                <div class="lg:col-span-6 mt-16 lg:mt-0 relative flex justify-center items-center h-[400px] sm:h-[500px]">
+                    <!-- Book 2 (Back) -->
+                    <div class="absolute transform rotate-6 translate-x-12 translate-y-8 z-0 w-48 sm:w-64 transition-transform hover:z-20 hover:scale-105 duration-300">
+                        <img src="1780449713914_2075712.webp" alt="Cover Statistika Ekonomi 2" class="rounded-md book-shadow border border-slate-700/50">
+                    </div>
+                    <!-- Book 1 (Front) -->
+                    <div class="absolute transform -rotate-3 -translate-x-12 z-10 w-52 sm:w-72 transition-transform hover:scale-105 duration-300">
+                        <img src="1780452467148_8073469.webp" alt="Cover Statistika Ekonomi 1" class="rounded-md book-shadow border border-slate-700/50">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION MASALAH -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">Sering Kesulitan Memahami Statistika Ekonomi?</h2>
+                <p class="text-lg text-slate-600 leading-relaxed mb-12">
+                    Banyak pembaca merasa Statistika Ekonomi sulit karena rumus terlihat rumit, pembahasan terlalu teknis, dan contoh soal kurang mudah dipahami. Padahal, Statistika sangat penting untuk memahami data, penelitian kuantitatif, analisis ekonomi, dan penyusunan karya ilmiah.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 mx-auto bg-blue-100 text-primary rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="font-semibold text-slate-800">Rumus Terlihat Rumit</h3>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 mx-auto bg-orange-100 text-secondary rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-book-journal-whills"></i>
+                    </div>
+                    <h3 class="font-semibold text-slate-800">Bahasa Terlalu Teknis</h3>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 mx-auto bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-semibold text-slate-800">Kesulitan Analisis Data</h3>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition duration-300">
+                    <div class="w-14 h-14 mx-auto bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-semibold text-slate-800">Kendala Skripsi/Tesis</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SOLUSI -->
+    <section class="py-20 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-secondary font-bold tracking-wider uppercase text-sm mb-2 block">Solusi Untuk Anda</span>
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">E-book Ini Membantu Anda Belajar Secara Bertahap</h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    E-book Statistika Ekonomi karya Adriansah disusun untuk membantu pembaca memahami materi secara runtut, sederhana, dan mudah dipelajari. Pembahasan dibuat sistematis agar cocok digunakan untuk belajar mandiri, kebutuhan perkuliahan, penelitian, maupun pengembangan wawasan.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid sm:grid-cols-2 gap-4">
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p class="font-medium text-slate-700">Penjelasan runtut dan sistematis</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p class="font-medium text-slate-700">Bahasa sederhana dan komunikatif</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p class="font-medium text-slate-700">Dilengkapi contoh soal dan latihan</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p class="font-medium text-slate-700">Cocok untuk belajar mandiri</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100 sm:col-span-2">
+                    <div class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p class="font-medium text-slate-700">Membantu analisis data penelitian secara praktis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PRODUK -->
+    <section class="py-20 bg-white" id="produk">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Pilihan E-book Tersedia</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-10">
+                <!-- Card Produk 1 -->
+                <div class="bg-white rounded-3xl shadow-xl shadow-slate-200 border border-slate-100 overflow-hidden flex flex-col">
+                    <div class="p-8 lg:p-10 flex-grow">
+                        <div class="flex flex-col sm:flex-row gap-8 items-start mb-6">
+                            <div class="w-full sm:w-1/3 flex-shrink-0 flex justify-center">
+                                <img src="1780452467148_8073469.webp" alt="Statistika Ekonomi 1" class="w-48 sm:w-full rounded shadow-lg border border-slate-200">
+                            </div>
+                            <div class="w-full sm:w-2/3">
+                                <div class="inline-block bg-blue-100 text-primary text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wide">
+                                    PDF Digital
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 mb-2">Statistika Ekonomi 1</h3>
+                                <p class="text-3xl font-extrabold text-secondary mb-4">Rp45.000</p>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    Buku Statistika Ekonomi 1 ditulis untuk menjelaskan teori dasar statistika, khususnya dalam bidang ekonomi, serta membantu memecahkan masalah-masalah penelitian kuantitatif yang memerlukan aplikasi statistika. Buku ini juga dapat dijadikan panduan bagi mahasiswa dalam mata kuliah Statistika Ekonomi 1 dan rujukan bagi pembaca yang bergelut dalam bidang statistika.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h4 class="font-semibold text-slate-900 mb-3 text-sm uppercase tracking-wide">Highlight Pembahasan:</h4>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Membahas teori dasar statistika ekonomi</li>
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Cocok untuk mata kuliah Statistika Ekonomi 1</li>
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Membantu memahami analisis data penelitian</li>
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Disusun dengan bahasa sederhana</li>
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Materi dijelaskan secara runtut dan rinci</li>
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Dilengkapi contoh soal dan latihan</li>
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Cocok untuk mahasiswa, peneliti, dan pembaca pemula</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-slate-100">
+                        <a href="#pemesanan" onclick="selectProduct('Statistika Ekonomi 1')" class="block w-full text-center bg-primary hover:bg-blue-800 text-white font-semibold py-3 rounded-xl transition shadow-md">
+                            Beli Statistika Ekonomi 1
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Produk 2 -->
+                <div class="bg-white rounded-3xl shadow-xl shadow-slate-200 border border-slate-100 overflow-hidden flex flex-col">
+                    <div class="p-8 lg:p-10 flex-grow">
+                        <div class="flex flex-col sm:flex-row gap-8 items-start mb-6">
+                            <div class="w-full sm:w-1/3 flex-shrink-0 flex justify-center">
+                                <img src="1780449713914_2075712.webp" alt="Statistika Ekonomi 2" class="w-48 sm:w-full rounded shadow-lg border border-slate-200">
+                            </div>
+                            <div class="w-full sm:w-2/3">
+                                <div class="inline-block bg-orange-100 text-secondary text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wide">
+                                    PDF Digital
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-900 mb-2">Statistika Ekonomi 2</h3>
+                                <p class="text-3xl font-extrabold text-secondary mb-4">Rp35.000</p>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    Buku Statistika Ekonomi 2 disusun dengan bahasa yang sederhana dan sistematis. Memuat sebelas bab yang terintegrasi, dari konsep probabilitas hingga analisis varian. Setiap bab dilengkapi contoh soal, pembahasan langkah demi langkah, dan latihan untuk memahami analisis secara bertahap.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h4 class="font-semibold text-slate-900 mb-3 text-sm uppercase tracking-wide">Materi yang Dibahas:</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-2 text-sm text-slate-600">
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Konsep probabilitas</li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Distribusi sampling</li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Estimasi parameter</li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Pengujian hipotesis</li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Korelasi & Regresi</li>
+                                </ul>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Statistik nonparametrik</li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Analisis varian 1 & 2 jalur</li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Latihan & Pembahasan</li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Penyelesaian manual</li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-green-500 mt-0.5"></i> Aplikasi SPSS & SmartPLS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-slate-100">
+                        <a href="#pemesanan" onclick="selectProduct('Statistika Ekonomi 2')" class="block w-full text-center bg-primary hover:bg-blue-800 text-white font-semibold py-3 rounded-xl transition shadow-md">
+                            Beli Statistika Ekonomi 2
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SINOPSIS LENGKAP -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Sinopsis E-book Statistika Ekonomi</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="space-y-12 max-w-5xl mx-auto">
+                <!-- Sinopsis 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-48 md:w-64 flex-shrink-0">
+                        <img src="1780452467148_8073469.webp" alt="Cover Statistika Ekonomi 1" class="w-full rounded shadow-md border border-slate-200">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 border-b pb-2">Statistika Ekonomi 1</h3>
+                        <div class="text-slate-600 leading-relaxed space-y-4 text-justify">
+                            <p>Pengembangan suatu bidang ilmu yang dilakukan dengan pendekatan penelitian kuantitatif sangat membutuhkan statistika. Buku Statistika Ekonomi 1 ini ditulis untuk menjelaskan teori dasar statistika khususnya dalam bidang ekonomi, dan membantu memecahkan masalah-masalah penelitian kuantitatif yang memerlukan aplikasi statistika.</p>
+                            <p>Di samping itu, buku ini juga dijadikan panduan bagi mahasiswa dalam mata kuliah Statistika Ekonomi 1 serta dapat digunakan sebagai rujukan bagi mereka yang bergelut dalam masalah-masalah statistika.</p>
+                            <p>Buku ini ditulis dengan bahasa yang sederhana dan mudah dipahami oleh para pembacanya meskipun belum memahami Statistika. Di dalamnya disajikan penjelasan tentang Statistika secara runtut dan rinci dalam bentuk bab, di mana dalam setiap bab disajikan contoh-contoh soal dan latihan.</p>
+                            <p>Buku ini diharapkan dapat membantu mahasiswa, peneliti, serta pihak-pihak yang tertarik dengan Statistika dalam menyelesaikan analisis data penelitian maupun penyelesaian karya ilmiah lainnya.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sinopsis 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8 flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-48 md:w-64 flex-shrink-0 md:order-last">
+                        <img src="1780449713914_2075712.webp" alt="Cover Statistika Ekonomi 2" class="w-full rounded shadow-md border border-slate-200">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary mb-4 border-b pb-2">Statistika Ekonomi 2</h3>
+                        <div class="text-slate-600 leading-relaxed space-y-4 text-justify">
+                            <p>Buku Statistika Ekonomi 2 disusun dengan bahasa yang sederhana dan sistematis. Buku ini memuat sebelas bab yang saling terintegrasi, dimulai dari konsep dasar probabilitas hingga analisis varian satu jalur dan dua jalur. Setiap bab dilengkapi dengan contoh soal, pembahasan langkah demi langkah, serta latihan yang membantu pembaca memahami proses analisis secara bertahap.</p>
+                            <p>Materi yang dibahas mencakup distribusi sampling, estimasi parameter, pengujian hipotesis proporsi dan rata-rata, korelasi, regresi linear sederhana dan berganda, statistik nonparametrik, serta analisis varian satu jalur dan dua jalur.</p>
+                            <p>Keunggulan buku ini terletak pada penyajian metode penyelesaian secara manual yang dipadukan dengan penggunaan aplikasi seperti SPSS dan SmartPLS, sehingga memberikan gambaran praktis dalam pengolahan data penelitian.</p>
+                            <p>Dengan bahasa yang komunikatif dan sistematika penulisan yang jelas, buku ini diharapkan dapat menjadi rujukan utama bagi mahasiswa, dosen, peneliti, serta praktisi yang membutuhkan pemahaman mendalam mengenai analisis data kuantitatif di bidang ekonomi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION BENEFIT -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Apa yang Akan Anda Dapatkan?</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto">Buku ini dirancang khusus untuk memberikan kemudahan dan manfaat maksimal bagi pembacanya.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Benefit Items -->
+                <div class="bg-white/10 p-5 rounded-xl border border-white/20 flex items-start gap-4">
+                    <div class="text-accent text-2xl mt-1"><i class="fa-solid fa-list-ol"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Materi Sistematis</h4>
+                        <p class="text-sm text-slate-300 mt-1">Disusun secara berurutan agar mudah diikuti.</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-5 rounded-xl border border-white/20 flex items-start gap-4">
+                    <div class="text-accent text-2xl mt-1"><i class="fa-solid fa-comments"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Bahasa Sederhana</h4>
+                        <p class="text-sm text-slate-300 mt-1">Penjelasan mudah dipahami tanpa bahasa yang kaku.</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-5 rounded-xl border border-white/20 flex items-start gap-4">
+                    <div class="text-accent text-2xl mt-1"><i class="fa-solid fa-layer-group"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Untuk Semua Level</h4>
+                        <p class="text-sm text-slate-300 mt-1">Cocok untuk pembaca pemula maupun lanjutan.</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-5 rounded-xl border border-white/20 flex items-start gap-4">
+                    <div class="text-accent text-2xl mt-1"><i class="fa-regular fa-clock"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Akses Kapan Saja</h4>
+                        <p class="text-sm text-slate-300 mt-1">File tersimpan selamanya, bebas dipelajari kapanpun.</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-5 rounded-xl border border-white/20 flex items-start gap-4">
+                    <div class="text-accent text-2xl mt-1"><i class="fa-solid fa-laptop-mobile"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Multi-Device</h4>
+                        <p class="text-sm text-slate-300 mt-1">Bisa dibuka melalui HP, tablet, laptop, dan PC.</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-5 rounded-xl border border-white/20 flex items-start gap-4">
+                    <div class="text-accent text-2xl mt-1"><i class="fa-solid fa-person-chalkboard"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Belajar Mandiri</h4>
+                        <p class="text-sm text-slate-300 mt-1">Sangat mendukung proses pembelajaran secara mandiri.</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-5 rounded-xl border border-white/20 flex items-start gap-4">
+                    <div class="text-accent text-2xl mt-1"><i class="fa-solid fa-microscope"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Dukungan Penelitian</h4>
+                        <p class="text-sm text-slate-300 mt-1">Membantu kebutuhan kuliah, penelitian, dan analisis data.</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-5 rounded-xl border border-white/20 flex items-start gap-4">
+                    <div class="text-accent text-2xl mt-1"><i class="fa-solid fa-scroll"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Solusi Karya Ilmiah</h4>
+                        <p class="text-sm text-slate-300 mt-1">Panduan tepat dalam penyelesaian penyusunan karya ilmiah.</p>
+                    </div>
+                </div>
+                <div class="bg-white/10 p-5 rounded-xl border border-white/20 flex items-start gap-4">
+                    <div class="text-accent text-2xl mt-1"><i class="fa-solid fa-users"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Berbagai Kalangan</h4>
+                        <p class="text-sm text-slate-300 mt-1">Cocok untuk mahasiswa, dosen, peneliti, praktisi, dan umum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION HARGA -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Harga E-book</h2>
+                <p class="text-slate-600 mt-3 font-medium">Sekali bayar, e-book bisa dipelajari kapan saja.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-8 max-w-4xl mx-auto">
+                <!-- Pricing Card 1 -->
+                <div class="bg-white border-2 border-slate-100 hover:border-primary rounded-2xl shadow-lg p-8 w-full md:w-1/2 text-center transition duration-300">
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Statistika Ekonomi 1</h3>
+                    <div class="inline-block bg-slate-100 text-slate-600 font-semibold px-4 py-1 rounded-full text-sm mb-6">
+                        PDF Digital
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-4xl font-extrabold text-primary">Rp45.000</span>
+                    </div>
+                    <a href="#pemesanan" onclick="selectProduct('Statistika Ekonomi 1')" class="block w-full bg-secondary hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition shadow">
+                        Beli Statistika Ekonomi 1
+                    </a>
+                </div>
+
+                <!-- Pricing Card 2 -->
+                <div class="bg-white border-2 border-slate-100 hover:border-secondary rounded-2xl shadow-lg p-8 w-full md:w-1/2 text-center transition duration-300">
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Statistika Ekonomi 2</h3>
+                    <div class="inline-block bg-slate-100 text-slate-600 font-semibold px-4 py-1 rounded-full text-sm mb-6">
+                        PDF Digital
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-4xl font-extrabold text-secondary">Rp35.000</span>
+                    </div>
+                    <a href="#pemesanan" onclick="selectProduct('Statistika Ekonomi 2')" class="block w-full bg-primary hover:bg-blue-800 text-white font-bold py-3 rounded-xl transition shadow">
+                        Beli Statistika Ekonomi 2
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CARA PEMBELIAN -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-slate-900">Cara Pembelian</h2>
+                <div class="w-16 h-1 bg-secondary mx-auto mt-4 rounded-full mb-6"></div>
+                <div class="bg-yellow-50 border border-yellow-200 text-yellow-800 p-4 rounded-lg inline-block text-sm max-w-xl">
+                    <i class="fa-solid fa-circle-info mr-2"></i> <strong>Catatan:</strong> Tidak ada pembayaran otomatis. Pembayaran dilakukan secara manual melalui transfer bank.
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-10 h-10 flex-shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
+                    <p class="text-slate-700 font-medium">Pilih e-book yang ingin dibeli dan klik tombol "Beli".</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-10 h-10 flex-shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
+                    <p class="text-slate-700 font-medium">Isi form pemesanan dengan data yang valid.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-10 h-10 flex-shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
+                    <p class="text-slate-700 font-medium">Transfer pembayaran ke rekening yang tersedia (Cantumkan nama pengirim).</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-10 h-10 flex-shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
+                    <p class="text-slate-700 font-medium">Upload bukti transfer melalui form pemesanan sebelum klik kirim.</p>
+                </div>
+                <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                    <div class="w-10 h-10 flex-shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">5</div>
+                    <p class="text-slate-700 font-medium">Admin akan memverifikasi. E-book PDF akan dikirim setelah pembayaran dikonfirmasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PEMESANAN & PEMBAYARAN (Side by Side on Desktop) -->
+    <section id="pemesanan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- SECTION PEMBAYARAN TRANSFER (Left Column) -->
+                <div class="lg:col-span-5">
+                    <div class="sticky top-24">
+                        <h2 class="text-3xl font-bold text-slate-900 mb-6">Pembayaran Transfer</h2>
+                        <p class="text-slate-600 mb-8">Terima kasih atas kepercayaan Anda. Silakan lakukan pembayaran sesuai harga produk yang dipilih melalui rekening berikut:</p>
+                        
+                        <div class="bg-gradient-to-br from-primary to-blue-800 rounded-2xl shadow-xl p-8 text-white mb-6 relative overflow-hidden">
+                            <!-- Decor -->
+                            <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-white opacity-10 rounded-full blur-xl"></div>
+                            
+                            <div class="flex items-center gap-3 mb-6 opacity-90">
+                                <i class="fa-solid fa-building-columns text-2xl"></i>
+                                <span class="font-semibold text-lg">Bank Muamalat Indonesia</span>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <p class="text-blue-200 text-sm mb-1 uppercase tracking-wider">Nomor Rekening</p>
+                                <div class="flex items-center justify-between bg-white/10 rounded-lg p-3 border border-white/20">
+                                    <span class="text-2xl font-mono font-bold tracking-widest" id="rekNumber">1060017275</span>
+                                    <button onclick="copyRekening()" id="copyBtn" class="bg-white text-primary hover:bg-slate-100 px-3 py-1.5 rounded text-sm font-semibold transition flex items-center gap-2">
+                                        <i class="fa-regular fa-copy"></i> Salin
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p class="text-blue-200 text-sm mb-1 uppercase tracking-wider">Nama Rekening</p>
+                                <p class="text-xl font-bold">Adriansah</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-orange-50 border-l-4 border-secondary p-5 rounded-r-lg">
+                            <h4 class="font-bold text-orange-800 flex items-center gap-2 mb-2">
+                                <i class="fa-solid fa-thumbtack"></i> Catatan Penting
+                            </h4>
+                            <ul class="text-sm text-orange-700 space-y-2 list-disc list-inside">
+                                <li>Mohon cantumkan <strong>nama pengirim</strong> saat melakukan transfer agar mudah diverifikasi.</li>
+                                <li>Setelah transfer berhasil, silakan <strong>upload bukti pembayaran</strong> pada form di samping.</li>
+                                <li>Pesanan akan diproses setelah pembayaran berhasil dikonfirmasi oleh Admin.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION FORM PEMESANAN (Right Column) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white rounded-2xl shadow-[0_0_40px_rgba(0,0,0,0.05)] border border-slate-100 p-8 sm:p-10">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-6 border-b pb-4">Form Pemesanan</h2>
+                        
+                        <div id="successMessage" class="hidden bg-green-50 border border-green-200 text-green-800 p-6 rounded-xl text-center mb-6">
+                            <div class="w-16 h-16 bg-green-100 text-green-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Pesanan Berhasil Dikirim!</h3>
+                            <p class="text-sm">Terima kasih. Pesanan Anda sudah diterima. Admin akan memverifikasi pembayaran dan mengirimkan e-book ke email/WhatsApp Anda setelah pembayaran berhasil dikonfirmasi.</p>
+                            <button onclick="resetForm()" class="mt-4 text-green-600 font-semibold text-sm hover:underline">Buat Pesanan Baru</button>
+                        </div>
+
+                        <form id="orderForm" onsubmit="submitForm(event)" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Nama Lengkap <span class="text-red-500">*</span></label>
+                                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-slate-50 focus:bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Nomor WhatsApp <span class="text-red-500">*</span></label>
+                                    <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-slate-50 focus:bg-white" placeholder="08xxxxxxxxxx">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Email Aktif <span class="text-red-500">*</span></label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-slate-50 focus:bg-white">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Pilihan Produk <span class="text-red-500">*</span></label>
+                                <select id="productSelect" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-slate-50 focus:bg-white appearance-none cursor-pointer">
+                                    <option value="" disabled selected>-- Pilih E-book --</option>
+                                    <option value="Statistika Ekonomi 1">Statistika Ekonomi 1 - Rp45.000</option>
+                                    <option value="Statistika Ekonomi 2">Statistika Ekonomi 2 - Rp35.000</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Nama Pengirim Transfer <span class="text-red-500">*</span></label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-slate-50 focus:bg-white" placeholder="Nama sesuai rekening bank">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Upload Bukti Transfer <span class="text-red-500">*</span></label>
+                                <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-slate-300 border-dashed rounded-lg bg-slate-50 hover:bg-slate-100 transition cursor-pointer relative" onclick="document.getElementById('file-upload').click()">
+                                    <div class="space-y-1 text-center">
+                                        <i class="fa-solid fa-cloud-arrow-up text-4xl text-slate-400 mb-3"></i>
+                                        <div class="flex text-sm text-slate-600 justify-center">
+                                            <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-primary hover:text-blue-800 focus-within:outline-none px-2 py-1 shadow-sm">
+                                                <span>Pilih file</span>
+                                                <input id="file-upload" name="file-upload" type="file" class="sr-only" required accept="image/*,.pdf" onchange="updateFileName(this)">
+                                            </label>
+                                            <p class="pl-1 pt-1">atau drag and drop</p>
+                                        </div>
+                                        <p class="text-xs text-slate-500" id="file-name">PNG, JPG, PDF up to 5MB</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Catatan Tambahan (Opsional)</label>
+                                <textarea rows="3" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-slate-50 focus:bg-white"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-secondary hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition shadow-lg shadow-orange-500/30 text-lg flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Kirim Pesanan
+                            </button>
+                            <p class="text-center text-xs text-slate-500 mt-4"><i class="fa-solid fa-lock text-slate-400"></i> Data Anda aman dan hanya digunakan untuk keperluan pengiriman pesanan.</p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FAQ -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Pertanyaan yang Sering Diajukan</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <details class="bg-white border border-slate-200 rounded-lg group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-semibold p-5 text-slate-800">
+                        Apakah e-book ini berbentuk fisik?
+                        <span class="transition group-open:rotate-180 text-primary"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-slate-600 p-5 pt-0 text-sm leading-relaxed border-t border-slate-100 mt-2">
+                        Tidak. Produk ini berbentuk e-book digital dengan format PDF.
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="bg-white border border-slate-200 rounded-lg group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-semibold p-5 text-slate-800">
+                        Apakah file bisa dibuka di HP?
+                        <span class="transition group-open:rotate-180 text-primary"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-slate-600 p-5 pt-0 text-sm leading-relaxed border-t border-slate-100 mt-2">
+                        Bisa. File PDF dapat dibuka melalui Android, iPhone, tablet, laptop, dan PC.
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="bg-white border border-slate-200 rounded-lg group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-semibold p-5 text-slate-800">
+                        Kapan e-book dikirim?
+                        <span class="transition group-open:rotate-180 text-primary"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-slate-600 p-5 pt-0 text-sm leading-relaxed border-t border-slate-100 mt-2">
+                        E-book akan dikirim setelah pembayaran berhasil dikonfirmasi oleh tim kami.
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="bg-white border border-slate-200 rounded-lg group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-semibold p-5 text-slate-800">
+                        Apakah cocok untuk mahasiswa?
+                        <span class="transition group-open:rotate-180 text-primary"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-slate-600 p-5 pt-0 text-sm leading-relaxed border-t border-slate-100 mt-2">
+                        Ya. E-book ini cocok untuk mahasiswa, pelajar, dosen, peneliti, praktisi, dan masyarakat umum.
+                    </div>
+                </details>
+
+                <!-- FAQ 5 -->
+                <details class="bg-white border border-slate-200 rounded-lg group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-semibold p-5 text-slate-800">
+                        Apakah cocok untuk yang belum memahami statistika?
+                        <span class="transition group-open:rotate-180 text-primary"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-slate-600 p-5 pt-0 text-sm leading-relaxed border-t border-slate-100 mt-2">
+                        Ya. Materi ditulis dengan bahasa sederhana dan disusun secara runtut agar lebih mudah dipahami bahkan untuk pemula.
+                    </div>
+                </details>
+
+                <!-- FAQ 6 -->
+                <details class="bg-white border border-slate-200 rounded-lg group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-semibold p-5 text-slate-800">
+                        Apakah harus transfer sesuai harga?
+                        <span class="transition group-open:rotate-180 text-primary"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-slate-600 p-5 pt-0 text-sm leading-relaxed border-t border-slate-100 mt-2">
+                        Ya. Silakan transfer sesuai harga produk yang dipilih agar pembayaran mudah diverifikasi oleh admin.
+                    </div>
+                </details>
+
+                <!-- FAQ 7 -->
+                <details class="bg-white border border-slate-200 rounded-lg group cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-semibold p-5 text-slate-800">
+                        Bagaimana jika sudah transfer tapi belum menerima e-book?
+                        <span class="transition group-open:rotate-180 text-primary"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-slate-600 p-5 pt-0 text-sm leading-relaxed border-t border-slate-100 mt-2">
+                        Pastikan bukti transfer sudah diupload dengan benar melalui form pemesanan. Admin akan memproses pesanan dan mengirimkan file setelah pembayaran berhasil dikonfirmasi.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CLOSING CTA & FOOTER -->
+    <footer class="bg-primary text-white pt-20 pb-8">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Mulai Belajar Statistika Ekonomi Sekarang</h2>
+            <p class="text-slate-300 text-lg mb-10 leading-relaxed">
+                Dapatkan e-book Statistika Ekonomi 1 dan Statistika Ekonomi 2 karya Adriansah untuk membantu proses belajar, penelitian, analisis data, dan penyusunan karya ilmiah secara lebih mudah dan terarah.
+            </p>
+            <a href="#pemesanan" class="inline-block bg-accent hover:bg-yellow-500 text-primary font-bold px-8 py-4 rounded-full text-lg transition shadow-lg shadow-yellow-500/30 transform hover:-translate-y-1">
+                Beli Sekarang via Transfer Bank
+            </a>
+            
+            <hr class="border-white/10 my-12">
+            
+            <p class="text-slate-400 text-sm">
+                &copy; <script>document.write(new Date().getFullYear())</script> Hak Cipta Dilindungi. E-book Statistika Ekonomi Karya Adriansah.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Set Product automatically when clicking "Beli" from pricing/product card
+        function selectProduct(productName) {
+            const selectElement = document.getElementById('productSelect');
+            for(let i=0; i < selectElement.options.length; i++) {
+                if(selectElement.options[i].value === productName) {
+                    selectElement.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // Copy Rekening Function
+        function copyRekening() {
+            const rekText = document.getElementById("rekNumber").innerText;
+            const btn = document.getElementById("copyBtn");
+            const originalHTML = btn.innerHTML;
+            
+            navigator.clipboard.writeText(rekText).then(() => {
+                btn.innerHTML = '<i class="fa-solid fa-check text-green-600"></i> Disalin';
+                btn.classList.add('bg-green-50');
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.classList.remove('bg-green-50');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                // Fallback for older browsers
+                const textArea = document.createElement("textarea");
+                textArea.value = rekText;
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    btn.innerHTML = '<i class="fa-solid fa-check text-green-600"></i> Disalin';
+                    setTimeout(() => { btn.innerHTML = originalHTML; }, 2000);
+                } catch (err) {
+                    alert("Gagal menyalin. Silakan blok dan copy manual: " + rekText);
+                }
+                document.body.removeChild(textArea);
+            });
+        }
+
+        // Update visual file name on upload
+        function updateFileName(input) {
+            const fileNameDisplay = document.getElementById('file-name');
+            if (input.files && input.files[0]) {
+                fileNameDisplay.textContent = "File terpilih: " + input.files[0].name;
+                fileNameDisplay.classList.add('text-primary', 'font-medium');
+            } else {
+                fileNameDisplay.textContent = "PNG, JPG, PDF up to 5MB";
+                fileNameDisplay.classList.remove('text-primary', 'font-medium');
+            }
+        }
+
+        // Simulate Form Submission (Visual Only, No Backend)
+        function submitForm(event) {
+            event.preventDefault(); // Prevent page reload
+            
+            // Hide form, show success message
+            document.getElementById('orderForm').classList.add('hidden');
+            const successMsg = document.getElementById('successMessage');
+            successMsg.classList.remove('hidden');
+            
+            // Scroll to the success message
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Reset form to make a new order
+        function resetForm() {
+            const form = document.getElementById('orderForm');
+            form.reset();
+            document.getElementById('file-name').textContent = "PNG, JPG, PDF up to 5MB";
+            document.getElementById('file-name').classList.remove('text-primary', 'font-medium');
+            
+            document.getElementById('successMessage').classList.add('hidden');
+            form.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
